@@ -4,17 +4,18 @@
 import math
 
 ## functions ##############################################################
+## measure the distance between 2 points ########
 def dist(x1, y1, z1, x2, y2, z2):
   d = math.sqrt(pow(x1-x2,2) + pow(y1-y2,2) + pow(z1-z2,2))
   return d
 
 ## main program ###########################################################
-# number of cells
+# number of cells for each axis
 cell_x = 2;
 cell_y = 2;
 cell_z = 2;
 
-# number of atoms
+# number of atoms (8 atoms for unit Silicon cell)
 atoms = 8 * cell_x * cell_y * cell_z
 
 # calculation of cell size
